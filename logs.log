@@ -3994,3 +3994,455 @@ Alternately, you can install this by running `pip install pycaret[models]`
                        min_samples_split=2, min_weight_fraction_leaf=0.0,
                        random_state=980, splitter='best')
 2022-07-12 00:38:48,475:INFO:compare_models() successfully completed......................................
+2022-07-22 16:59:10,757:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 16:59:10,758:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 16:59:10,759:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 16:59:10,760:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 23:27:43,069:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 23:27:43,073:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 23:27:43,075:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 23:27:43,078:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-22 23:29:57,357:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:29:57,357:INFO:Logging name: clf-default-name
+2022-07-22 23:29:57,357:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:29:57,357:INFO:version 3.0.0.rc2
+2022-07-22 23:29:57,358:INFO:Initializing setup()
+2022-07-22 23:29:57,358:INFO:self.USI: c8a9
+2022-07-22 23:29:57,358:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:29:57,359:INFO:Checking environment
+2022-07-22 23:29:57,359:INFO:python_version: 3.9.13
+2022-07-22 23:29:57,359:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:29:57,359:INFO:machine: AMD64
+2022-07-22 23:29:57,359:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:29:57,360:INFO:Memory: svmem(total=8346034176, available=1030483968, percent=87.7, used=7315550208, free=1030483968)
+2022-07-22 23:29:57,360:INFO:Physical Core: 4
+2022-07-22 23:29:57,360:INFO:Logical Core: 8
+2022-07-22 23:29:57,360:INFO:Checking libraries
+2022-07-22 23:29:57,361:INFO:System:
+2022-07-22 23:29:57,361:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:29:57,361:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:29:57,361:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:29:57,361:INFO:PyCaret required dependencies:
+2022-07-22 23:30:06,295:INFO:                 pip: 22.2
+2022-07-22 23:30:06,295:INFO:          setuptools: 58.1.0
+2022-07-22 23:30:06,295:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:30:06,295:INFO:             IPython: 7.30.1
+2022-07-22 23:30:06,296:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:30:06,296:INFO:                tqdm: 4.62.3
+2022-07-22 23:30:06,296:INFO:               numpy: 1.21.5
+2022-07-22 23:30:06,296:INFO:              pandas: 1.3.5
+2022-07-22 23:30:06,296:INFO:              jinja2: 3.0.3
+2022-07-22 23:30:06,296:INFO:               scipy: 1.7.3
+2022-07-22 23:30:06,296:INFO:              joblib: 1.1.0
+2022-07-22 23:30:06,296:INFO:             sklearn: 1.1.1
+2022-07-22 23:30:06,296:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:30:06,296:INFO:            imblearn: 0.9.1
+2022-07-22 23:30:06,296:INFO:   category_encoders: 2.5.0
+2022-07-22 23:30:06,297:INFO:            lightgbm: 3.3.2
+2022-07-22 23:30:06,298:INFO:               numba: 0.55.2
+2022-07-22 23:30:06,298:INFO:            requests: 2.28.0
+2022-07-22 23:30:06,298:INFO:          matplotlib: 3.5.1
+2022-07-22 23:30:06,298:INFO:          scikitplot: 0.3.7
+2022-07-22 23:30:06,298:INFO:         yellowbrick: 1.4
+2022-07-22 23:30:06,298:INFO:              plotly: 5.8.2
+2022-07-22 23:30:06,298:INFO:             kaleido: 0.2.1
+2022-07-22 23:30:06,298:INFO:         statsmodels: 0.13.1
+2022-07-22 23:30:06,298:INFO:              sktime: 0.12.0
+2022-07-22 23:30:06,298:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:30:06,298:INFO:            pmdarima: 1.8.5
+2022-07-22 23:30:06,298:INFO:              psutil: 5.9.1
+2022-07-22 23:30:06,298:INFO:None
+2022-07-22 23:30:06,298:INFO:Set up data.
+2022-07-22 23:30:07,106:INFO:Set up train/test split.
+2022-07-22 23:30:07,803:INFO:Assigning column types.
+2022-07-22 23:30:07,885:INFO:Set up folding strategy.
+2022-07-22 23:30:07,886:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:30:07,904:INFO:Set up label encoding.
+2022-07-22 23:30:07,904:INFO:Set up simple imputation.
+2022-07-22 23:30:08,312:INFO:Set up encoding of ordinal features.
+2022-07-22 23:30:08,702:INFO:Set up encoding of categorical features.
+2022-07-22 23:30:08,702:INFO:Set up imbalanced handling.
+2022-07-22 23:31:15,760:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:31:15,760:INFO:Logging name: clf-default-name
+2022-07-22 23:31:15,762:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:31:15,762:INFO:version 3.0.0.rc2
+2022-07-22 23:31:15,762:INFO:Initializing setup()
+2022-07-22 23:31:15,763:INFO:self.USI: 6685
+2022-07-22 23:31:15,764:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:31:15,765:INFO:Checking environment
+2022-07-22 23:31:15,765:INFO:python_version: 3.9.13
+2022-07-22 23:31:15,766:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:31:15,766:INFO:machine: AMD64
+2022-07-22 23:31:15,766:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:31:15,766:INFO:Memory: svmem(total=8346034176, available=1021681664, percent=87.8, used=7324352512, free=1021681664)
+2022-07-22 23:31:15,766:INFO:Physical Core: 4
+2022-07-22 23:31:15,766:INFO:Logical Core: 8
+2022-07-22 23:31:15,766:INFO:Checking libraries
+2022-07-22 23:31:15,767:INFO:System:
+2022-07-22 23:31:15,767:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:31:15,767:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:31:15,767:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:31:15,767:INFO:PyCaret required dependencies:
+2022-07-22 23:31:15,768:INFO:                 pip: 22.2
+2022-07-22 23:31:15,768:INFO:          setuptools: 58.1.0
+2022-07-22 23:31:15,768:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:31:15,768:INFO:             IPython: 7.30.1
+2022-07-22 23:31:15,768:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:31:15,768:INFO:                tqdm: 4.62.3
+2022-07-22 23:31:15,768:INFO:               numpy: 1.21.5
+2022-07-22 23:31:15,769:INFO:              pandas: 1.3.5
+2022-07-22 23:31:15,769:INFO:              jinja2: 3.0.3
+2022-07-22 23:31:15,769:INFO:               scipy: 1.7.3
+2022-07-22 23:31:15,769:INFO:              joblib: 1.1.0
+2022-07-22 23:31:15,769:INFO:             sklearn: 1.1.1
+2022-07-22 23:31:15,769:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:31:15,770:INFO:            imblearn: 0.9.1
+2022-07-22 23:31:15,770:INFO:   category_encoders: 2.5.0
+2022-07-22 23:31:15,771:INFO:            lightgbm: 3.3.2
+2022-07-22 23:31:15,771:INFO:               numba: 0.55.2
+2022-07-22 23:31:15,771:INFO:            requests: 2.28.0
+2022-07-22 23:31:15,771:INFO:          matplotlib: 3.5.1
+2022-07-22 23:31:15,771:INFO:          scikitplot: 0.3.7
+2022-07-22 23:31:15,771:INFO:         yellowbrick: 1.4
+2022-07-22 23:31:15,771:INFO:              plotly: 5.8.2
+2022-07-22 23:31:15,771:INFO:             kaleido: 0.2.1
+2022-07-22 23:31:15,771:INFO:         statsmodels: 0.13.1
+2022-07-22 23:31:15,771:INFO:              sktime: 0.12.0
+2022-07-22 23:31:15,772:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:31:15,772:INFO:            pmdarima: 1.8.5
+2022-07-22 23:31:15,772:INFO:              psutil: 5.9.1
+2022-07-22 23:31:15,772:INFO:None
+2022-07-22 23:31:15,773:INFO:Set up data.
+2022-07-22 23:31:16,700:INFO:Set up train/test split.
+2022-07-22 23:31:17,279:INFO:Assigning column types.
+2022-07-22 23:31:17,356:INFO:Set up folding strategy.
+2022-07-22 23:31:17,356:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:31:17,375:INFO:Set up label encoding.
+2022-07-22 23:31:17,376:INFO:Set up simple imputation.
+2022-07-22 23:31:17,942:INFO:Set up encoding of ordinal features.
+2022-07-22 23:31:18,451:INFO:Set up encoding of categorical features.
+2022-07-22 23:31:18,451:INFO:Set up imbalanced handling.
+2022-07-22 23:32:31,912:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:32:31,913:INFO:Logging name: clf-default-name
+2022-07-22 23:32:31,915:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:32:31,916:INFO:version 3.0.0.rc2
+2022-07-22 23:32:31,916:INFO:Initializing setup()
+2022-07-22 23:32:31,916:INFO:self.USI: 6403
+2022-07-22 23:32:31,916:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:32:31,916:INFO:Checking environment
+2022-07-22 23:32:31,916:INFO:python_version: 3.9.13
+2022-07-22 23:32:31,916:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:32:31,916:INFO:machine: AMD64
+2022-07-22 23:32:31,916:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:32:31,918:INFO:Memory: svmem(total=8346034176, available=945684480, percent=88.7, used=7400349696, free=945684480)
+2022-07-22 23:32:31,918:INFO:Physical Core: 4
+2022-07-22 23:32:31,918:INFO:Logical Core: 8
+2022-07-22 23:32:31,918:INFO:Checking libraries
+2022-07-22 23:32:31,918:INFO:System:
+2022-07-22 23:32:31,918:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:32:31,918:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:32:31,919:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:32:31,919:INFO:PyCaret required dependencies:
+2022-07-22 23:32:31,919:INFO:                 pip: 22.2
+2022-07-22 23:32:31,919:INFO:          setuptools: 58.1.0
+2022-07-22 23:32:31,920:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:32:31,920:INFO:             IPython: 7.30.1
+2022-07-22 23:32:31,920:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:32:31,920:INFO:                tqdm: 4.62.3
+2022-07-22 23:32:31,920:INFO:               numpy: 1.21.5
+2022-07-22 23:32:31,920:INFO:              pandas: 1.3.5
+2022-07-22 23:32:31,920:INFO:              jinja2: 3.0.3
+2022-07-22 23:32:31,921:INFO:               scipy: 1.7.3
+2022-07-22 23:32:31,921:INFO:              joblib: 1.1.0
+2022-07-22 23:32:31,922:INFO:             sklearn: 1.1.1
+2022-07-22 23:32:31,923:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:32:31,924:INFO:            imblearn: 0.9.1
+2022-07-22 23:32:31,925:INFO:   category_encoders: 2.5.0
+2022-07-22 23:32:31,925:INFO:            lightgbm: 3.3.2
+2022-07-22 23:32:31,925:INFO:               numba: 0.55.2
+2022-07-22 23:32:31,925:INFO:            requests: 2.28.0
+2022-07-22 23:32:31,926:INFO:          matplotlib: 3.5.1
+2022-07-22 23:32:31,926:INFO:          scikitplot: 0.3.7
+2022-07-22 23:32:31,926:INFO:         yellowbrick: 1.4
+2022-07-22 23:32:31,927:INFO:              plotly: 5.8.2
+2022-07-22 23:32:31,927:INFO:             kaleido: 0.2.1
+2022-07-22 23:32:31,927:INFO:         statsmodels: 0.13.1
+2022-07-22 23:32:31,927:INFO:              sktime: 0.12.0
+2022-07-22 23:32:31,927:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:32:31,927:INFO:            pmdarima: 1.8.5
+2022-07-22 23:32:31,927:INFO:              psutil: 5.9.1
+2022-07-22 23:32:31,927:INFO:None
+2022-07-22 23:32:31,927:INFO:Set up data.
+2022-07-22 23:32:32,850:INFO:Set up train/test split.
+2022-07-22 23:32:33,583:INFO:Assigning column types.
+2022-07-22 23:32:33,681:INFO:Set up folding strategy.
+2022-07-22 23:32:33,681:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:32:33,705:INFO:Set up label encoding.
+2022-07-22 23:32:33,705:INFO:Set up simple imputation.
+2022-07-22 23:32:34,107:INFO:Set up encoding of ordinal features.
+2022-07-22 23:32:34,421:INFO:Set up encoding of categorical features.
+2022-07-22 23:32:34,421:INFO:Set up imbalanced handling.
+2022-07-22 23:37:26,579:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:37:26,579:INFO:Logging name: clf-default-name
+2022-07-22 23:37:26,579:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:37:26,579:INFO:version 3.0.0.rc2
+2022-07-22 23:37:26,581:INFO:Initializing setup()
+2022-07-22 23:37:26,581:INFO:self.USI: c50b
+2022-07-22 23:37:26,582:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:37:26,582:INFO:Checking environment
+2022-07-22 23:37:26,582:INFO:python_version: 3.9.13
+2022-07-22 23:37:26,582:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:37:26,582:INFO:machine: AMD64
+2022-07-22 23:37:26,583:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:37:26,583:INFO:Memory: svmem(total=8346034176, available=1047052288, percent=87.5, used=7298981888, free=1047052288)
+2022-07-22 23:37:26,583:INFO:Physical Core: 4
+2022-07-22 23:37:26,583:INFO:Logical Core: 8
+2022-07-22 23:37:26,583:INFO:Checking libraries
+2022-07-22 23:37:26,584:INFO:System:
+2022-07-22 23:37:26,584:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:37:26,584:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:37:26,584:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:37:26,584:INFO:PyCaret required dependencies:
+2022-07-22 23:37:26,584:INFO:                 pip: 22.2
+2022-07-22 23:37:26,585:INFO:          setuptools: 58.1.0
+2022-07-22 23:37:26,585:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:37:26,586:INFO:             IPython: 7.30.1
+2022-07-22 23:37:26,586:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:37:26,586:INFO:                tqdm: 4.62.3
+2022-07-22 23:37:26,586:INFO:               numpy: 1.21.5
+2022-07-22 23:37:26,587:INFO:              pandas: 1.3.5
+2022-07-22 23:37:26,587:INFO:              jinja2: 3.0.3
+2022-07-22 23:37:26,587:INFO:               scipy: 1.7.3
+2022-07-22 23:37:26,587:INFO:              joblib: 1.1.0
+2022-07-22 23:37:26,588:INFO:             sklearn: 1.1.1
+2022-07-22 23:37:26,588:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:37:26,588:INFO:            imblearn: 0.9.1
+2022-07-22 23:37:26,588:INFO:   category_encoders: 2.5.0
+2022-07-22 23:37:26,588:INFO:            lightgbm: 3.3.2
+2022-07-22 23:37:26,589:INFO:               numba: 0.55.2
+2022-07-22 23:37:26,589:INFO:            requests: 2.28.0
+2022-07-22 23:37:26,589:INFO:          matplotlib: 3.5.1
+2022-07-22 23:37:26,589:INFO:          scikitplot: 0.3.7
+2022-07-22 23:37:26,589:INFO:         yellowbrick: 1.4
+2022-07-22 23:37:26,589:INFO:              plotly: 5.8.2
+2022-07-22 23:37:26,589:INFO:             kaleido: 0.2.1
+2022-07-22 23:37:26,590:INFO:         statsmodels: 0.13.1
+2022-07-22 23:37:26,590:INFO:              sktime: 0.12.0
+2022-07-22 23:37:26,590:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:37:26,590:INFO:            pmdarima: 1.8.5
+2022-07-22 23:37:26,590:INFO:              psutil: 5.9.1
+2022-07-22 23:37:26,590:INFO:None
+2022-07-22 23:37:26,590:INFO:Set up data.
+2022-07-22 23:37:27,542:INFO:Set up train/test split.
+2022-07-22 23:37:28,252:INFO:Assigning column types.
+2022-07-22 23:37:28,341:INFO:Set up folding strategy.
+2022-07-22 23:37:28,341:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:37:28,363:INFO:Set up label encoding.
+2022-07-22 23:37:28,364:INFO:Set up simple imputation.
+2022-07-22 23:37:28,889:INFO:Set up encoding of ordinal features.
+2022-07-22 23:37:29,269:INFO:Set up encoding of categorical features.
+2022-07-22 23:37:29,270:INFO:Set up imbalanced handling.
+2022-07-22 23:40:29,514:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:40:29,514:INFO:Logging name: clf-default-name
+2022-07-22 23:40:29,514:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:40:29,514:INFO:version 3.0.0.rc2
+2022-07-22 23:40:29,514:INFO:Initializing setup()
+2022-07-22 23:40:29,514:INFO:self.USI: 9185
+2022-07-22 23:40:29,514:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:40:29,514:INFO:Checking environment
+2022-07-22 23:40:29,514:INFO:python_version: 3.9.13
+2022-07-22 23:40:29,514:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:40:29,514:INFO:machine: AMD64
+2022-07-22 23:40:29,515:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:40:29,515:INFO:Memory: svmem(total=8346034176, available=859705344, percent=89.7, used=7486328832, free=859705344)
+2022-07-22 23:40:29,515:INFO:Physical Core: 4
+2022-07-22 23:40:29,515:INFO:Logical Core: 8
+2022-07-22 23:40:29,515:INFO:Checking libraries
+2022-07-22 23:40:29,515:INFO:System:
+2022-07-22 23:40:29,515:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:40:29,515:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:40:29,515:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:40:29,516:INFO:PyCaret required dependencies:
+2022-07-22 23:40:29,516:INFO:                 pip: 22.2
+2022-07-22 23:40:29,516:INFO:          setuptools: 58.1.0
+2022-07-22 23:40:29,516:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:40:29,516:INFO:             IPython: 7.30.1
+2022-07-22 23:40:29,516:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:40:29,516:INFO:                tqdm: 4.62.3
+2022-07-22 23:40:29,516:INFO:               numpy: 1.21.5
+2022-07-22 23:40:29,517:INFO:              pandas: 1.3.5
+2022-07-22 23:40:29,517:INFO:              jinja2: 3.0.3
+2022-07-22 23:40:29,517:INFO:               scipy: 1.7.3
+2022-07-22 23:40:29,517:INFO:              joblib: 1.1.0
+2022-07-22 23:40:29,517:INFO:             sklearn: 1.1.1
+2022-07-22 23:40:29,517:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:40:29,518:INFO:            imblearn: 0.9.1
+2022-07-22 23:40:29,518:INFO:   category_encoders: 2.5.0
+2022-07-22 23:40:29,518:INFO:            lightgbm: 3.3.2
+2022-07-22 23:40:29,518:INFO:               numba: 0.55.2
+2022-07-22 23:40:29,518:INFO:            requests: 2.28.0
+2022-07-22 23:40:29,518:INFO:          matplotlib: 3.5.1
+2022-07-22 23:40:29,518:INFO:          scikitplot: 0.3.7
+2022-07-22 23:40:29,518:INFO:         yellowbrick: 1.4
+2022-07-22 23:40:29,518:INFO:              plotly: 5.8.2
+2022-07-22 23:40:29,518:INFO:             kaleido: 0.2.1
+2022-07-22 23:40:29,518:INFO:         statsmodels: 0.13.1
+2022-07-22 23:40:29,518:INFO:              sktime: 0.12.0
+2022-07-22 23:40:29,519:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:40:29,519:INFO:            pmdarima: 1.8.5
+2022-07-22 23:40:29,519:INFO:              psutil: 5.9.1
+2022-07-22 23:40:29,519:INFO:None
+2022-07-22 23:40:29,520:INFO:Set up data.
+2022-07-22 23:40:30,405:INFO:Set up train/test split.
+2022-07-22 23:40:30,945:INFO:Assigning column types.
+2022-07-22 23:40:31,022:INFO:Set up folding strategy.
+2022-07-22 23:40:31,023:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:40:31,040:INFO:Set up label encoding.
+2022-07-22 23:40:31,040:INFO:Set up simple imputation.
+2022-07-22 23:40:31,598:INFO:Set up encoding of ordinal features.
+2022-07-22 23:40:32,037:INFO:Set up encoding of categorical features.
+2022-07-22 23:40:32,037:INFO:Set up imbalanced handling.
+2022-07-22 23:41:27,379:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 16.15s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:41:52,749:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 7.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:42:05,692:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 4.11s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:42:05,887:INFO:Finished creating preprocessing pipeline.
+2022-07-22 23:42:05,904:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\david\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None, transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=['anual_income', 'age', 'working_years', 'owning_work_phone', 'owning_phone', 'owning_email'], transformer=Simp...
+                 TransformerWrapper(exclude=None, include=['housing_type', 'job', 'payment_status'], transformer=LeaveOneOutEncoder(cols=['housing_type', 'job', 'payment_status'], drop_invariant=False, handle_missing='return_nan', handle_unknown='value', random_state=5554, return_df=True, sigma=None, verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None, transformer=FixImbalancer(estimator=<class 'imblearn.under_sampling._prototype_selection._nearmiss.NearMiss'>)))],
+         verbose=False)
+2022-07-22 23:42:05,904:INFO:Creating final display dataframe.
+2022-07-22 23:44:00,620:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:44:00,621:INFO:Logging name: clf-default-name
+2022-07-22 23:44:00,621:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:44:00,621:INFO:version 3.0.0.rc2
+2022-07-22 23:44:00,621:INFO:Initializing setup()
+2022-07-22 23:44:00,621:INFO:self.USI: dcdd
+2022-07-22 23:44:00,622:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:44:00,622:INFO:Checking environment
+2022-07-22 23:44:00,622:INFO:python_version: 3.9.13
+2022-07-22 23:44:00,623:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:44:00,623:INFO:machine: AMD64
+2022-07-22 23:44:00,623:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:44:00,623:INFO:Memory: svmem(total=8346034176, available=712065024, percent=91.5, used=7633969152, free=712065024)
+2022-07-22 23:44:00,623:INFO:Physical Core: 4
+2022-07-22 23:44:00,623:INFO:Logical Core: 8
+2022-07-22 23:44:00,624:INFO:Checking libraries
+2022-07-22 23:44:00,625:INFO:System:
+2022-07-22 23:44:00,625:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:44:00,625:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:44:00,625:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:44:00,625:INFO:PyCaret required dependencies:
+2022-07-22 23:44:00,626:INFO:                 pip: 22.2
+2022-07-22 23:44:00,626:INFO:          setuptools: 58.1.0
+2022-07-22 23:44:00,626:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:44:00,626:INFO:             IPython: 7.30.1
+2022-07-22 23:44:00,627:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:44:00,627:INFO:                tqdm: 4.62.3
+2022-07-22 23:44:00,627:INFO:               numpy: 1.21.5
+2022-07-22 23:44:00,627:INFO:              pandas: 1.3.5
+2022-07-22 23:44:00,627:INFO:              jinja2: 3.0.3
+2022-07-22 23:44:00,628:INFO:               scipy: 1.7.3
+2022-07-22 23:44:00,628:INFO:              joblib: 1.1.0
+2022-07-22 23:44:00,628:INFO:             sklearn: 1.1.1
+2022-07-22 23:44:00,628:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:44:00,629:INFO:            imblearn: 0.9.1
+2022-07-22 23:44:00,630:INFO:   category_encoders: 2.5.0
+2022-07-22 23:44:00,631:INFO:            lightgbm: 3.3.2
+2022-07-22 23:44:00,632:INFO:               numba: 0.55.2
+2022-07-22 23:44:00,632:INFO:            requests: 2.28.0
+2022-07-22 23:44:00,632:INFO:          matplotlib: 3.5.1
+2022-07-22 23:44:00,632:INFO:          scikitplot: 0.3.7
+2022-07-22 23:44:00,633:INFO:         yellowbrick: 1.4
+2022-07-22 23:44:00,633:INFO:              plotly: 5.8.2
+2022-07-22 23:44:00,633:INFO:             kaleido: 0.2.1
+2022-07-22 23:44:00,633:INFO:         statsmodels: 0.13.1
+2022-07-22 23:44:00,633:INFO:              sktime: 0.12.0
+2022-07-22 23:44:00,634:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:44:00,634:INFO:            pmdarima: 1.8.5
+2022-07-22 23:44:00,634:INFO:              psutil: 5.9.1
+2022-07-22 23:44:00,634:INFO:None
+2022-07-22 23:44:00,635:INFO:Set up data.
+2022-07-22 23:44:01,376:INFO:Set up train/test split.
+2022-07-22 23:44:02,085:INFO:Assigning column types.
+2022-07-22 23:44:02,166:INFO:Set up folding strategy.
+2022-07-22 23:44:02,166:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:44:02,183:INFO:Set up label encoding.
+2022-07-22 23:44:02,183:INFO:Set up simple imputation.
+2022-07-22 23:44:02,791:INFO:Set up encoding of ordinal features.
+2022-07-22 23:44:03,198:INFO:Set up encoding of categorical features.
+2022-07-22 23:44:03,199:INFO:Set up imbalanced handling.
+2022-07-22 23:44:49,669:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 13.83s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:45:14,671:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 7.99s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:45:27,631:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.94s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:45:27,853:INFO:Finished creating preprocessing pipeline.
+2022-07-22 23:45:27,873:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\david\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None, transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=['anual_income', 'age', 'working_years', 'owning_work_phone', 'owning_phone', 'owning_email'], transformer=Simp...
+                 TransformerWrapper(exclude=None, include=['housing_type', 'job', 'payment_status'], transformer=LeaveOneOutEncoder(cols=['housing_type', 'job', 'payment_status'], drop_invariant=False, handle_missing='return_nan', handle_unknown='value', random_state=8043, return_df=True, sigma=None, verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None, transformer=FixImbalancer(estimator=<class 'imblearn.under_sampling._prototype_selection._edited_nearest_neighbours.AllKNN'>)))],
+         verbose=False)
+2022-07-22 23:45:27,874:INFO:Creating final display dataframe.
