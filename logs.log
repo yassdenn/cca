@@ -4446,3 +4446,1255 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
                  TransformerWrapper(exclude=None, include=None, transformer=FixImbalancer(estimator=<class 'imblearn.under_sampling._prototype_selection._edited_nearest_neighbours.AllKNN'>)))],
          verbose=False)
 2022-07-22 23:45:27,874:INFO:Creating final display dataframe.
+2022-07-22 23:57:53,448:INFO:PyCaret ClassificationExperiment
+2022-07-22 23:57:53,448:INFO:Logging name: clf-default-name
+2022-07-22 23:57:53,448:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-22 23:57:53,448:INFO:version 3.0.0.rc2
+2022-07-22 23:57:53,448:INFO:Initializing setup()
+2022-07-22 23:57:53,448:INFO:self.USI: 2c79
+2022-07-22 23:57:53,448:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-22 23:57:53,448:INFO:Checking environment
+2022-07-22 23:57:53,448:INFO:python_version: 3.9.13
+2022-07-22 23:57:53,448:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-22 23:57:53,448:INFO:machine: AMD64
+2022-07-22 23:57:53,448:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-22 23:57:53,448:INFO:Memory: svmem(total=8346034176, available=1428783104, percent=82.9, used=6917251072, free=1428783104)
+2022-07-22 23:57:53,448:INFO:Physical Core: 4
+2022-07-22 23:57:53,448:INFO:Logical Core: 8
+2022-07-22 23:57:53,448:INFO:Checking libraries
+2022-07-22 23:57:53,448:INFO:System:
+2022-07-22 23:57:53,448:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-22 23:57:53,448:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-22 23:57:53,448:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-22 23:57:53,448:INFO:PyCaret required dependencies:
+2022-07-22 23:57:53,456:INFO:                 pip: 22.2
+2022-07-22 23:57:53,456:INFO:          setuptools: 58.1.0
+2022-07-22 23:57:53,456:INFO:             pycaret: 3.0.0.rc2
+2022-07-22 23:57:53,456:INFO:             IPython: 7.30.1
+2022-07-22 23:57:53,456:INFO:          ipywidgets: 7.6.5
+2022-07-22 23:57:53,456:INFO:                tqdm: 4.62.3
+2022-07-22 23:57:53,456:INFO:               numpy: 1.21.5
+2022-07-22 23:57:53,456:INFO:              pandas: 1.3.5
+2022-07-22 23:57:53,456:INFO:              jinja2: 3.0.3
+2022-07-22 23:57:53,456:INFO:               scipy: 1.7.3
+2022-07-22 23:57:53,456:INFO:              joblib: 1.1.0
+2022-07-22 23:57:53,456:INFO:             sklearn: 1.1.1
+2022-07-22 23:57:53,456:INFO:                pyod: Installed but version unavailable
+2022-07-22 23:57:53,456:INFO:            imblearn: 0.9.1
+2022-07-22 23:57:53,456:INFO:   category_encoders: 2.5.0
+2022-07-22 23:57:53,456:INFO:            lightgbm: 3.3.2
+2022-07-22 23:57:53,456:INFO:               numba: 0.55.2
+2022-07-22 23:57:53,456:INFO:            requests: 2.28.0
+2022-07-22 23:57:53,456:INFO:          matplotlib: 3.5.1
+2022-07-22 23:57:53,456:INFO:          scikitplot: 0.3.7
+2022-07-22 23:57:53,456:INFO:         yellowbrick: 1.4
+2022-07-22 23:57:53,456:INFO:              plotly: 5.8.2
+2022-07-22 23:57:53,456:INFO:             kaleido: 0.2.1
+2022-07-22 23:57:53,456:INFO:         statsmodels: 0.13.1
+2022-07-22 23:57:53,456:INFO:              sktime: 0.12.0
+2022-07-22 23:57:53,456:INFO:               tbats: Installed but version unavailable
+2022-07-22 23:57:53,456:INFO:            pmdarima: 1.8.5
+2022-07-22 23:57:53,456:INFO:              psutil: 5.9.1
+2022-07-22 23:57:53,456:INFO:None
+2022-07-22 23:57:53,456:INFO:Set up data.
+2022-07-22 23:57:54,297:INFO:Set up train/test split.
+2022-07-22 23:57:54,839:INFO:Assigning column types.
+2022-07-22 23:57:54,921:INFO:Set up folding strategy.
+2022-07-22 23:57:54,921:INFO:Preparing preprocessing pipeline...
+2022-07-22 23:57:54,933:INFO:Set up label encoding.
+2022-07-22 23:57:54,933:INFO:Set up simple imputation.
+2022-07-22 23:57:55,433:INFO:Set up encoding of ordinal features.
+2022-07-22 23:57:55,773:INFO:Set up encoding of categorical features.
+2022-07-22 23:57:55,773:INFO:Set up imbalanced handling.
+2022-07-22 23:58:33,626:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 11.12s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:58:53,954:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 6.33s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:59:04,651:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.34s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-22 23:59:04,776:INFO:Finished creating preprocessing pipeline.
+2022-07-22 23:59:04,784:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\david\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None, transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=['anual_income', 'age', 'working_years', 'owning_work_phone', 'owning_phone', 'owning_email'], transformer=Simp...
+                 TransformerWrapper(exclude=None, include=['housing_type', 'job', 'payment_status'], transformer=LeaveOneOutEncoder(cols=['housing_type', 'job', 'payment_status'], drop_invariant=False, handle_missing='return_nan', handle_unknown='value', random_state=8915, return_df=True, sigma=None, verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None, transformer=FixImbalancer(estimator=AllKNN(allow_minority=False, kind_sel='all', n_jobs=None, n_neighbors=3, sampling_strategy='auto'))))],
+         verbose=False)
+2022-07-22 23:59:04,784:INFO:Creating final display dataframe.
+2022-07-23 00:50:55,116:INFO:Setup display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8               Ignore features   
+9              Ordinal features   
+10             Numeric features   
+11         Categorical features   
+12                   Preprocess   
+13              Imputation type   
+14           Numeric imputation   
+15       Categorical imputation   
+16     Maximum one-hot encoding   
+17              Encoding method   
+18                Fix imbalance   
+19         Fix imbalance method   
+20               Fold Generator   
+21                  Fold Number   
+22                     CPU Jobs   
+23                      Use GPU   
+24               Log Experiment   
+25              Experiment Name   
+26                          USI   
+
+                                                Value  
+0                                                8915  
+1                                           risk_user  
+2                                              Binary  
+3                                          N: 0, Y: 1  
+4                                        (430134, 16)  
+5                                        (430123, 26)  
+6                                        (344096, 26)  
+7                                         (86027, 26)  
+8                                                   1  
+9                                                   6  
+10                                                  6  
+11                                                 12  
+12                                               True  
+13                                             simple  
+14                                               mean  
+15                                           constant  
+16                                                  5  
+17                                               None  
+18                                               True  
+19  AllKNN(allow_minority=False, kind_sel='all', n...  
+20                                              KFold  
+21                                                  3  
+22                                                 -1  
+23                                              False  
+24                                              False  
+25                                   clf-default-name  
+26                                               2c79  
+2022-07-23 00:50:55,970:INFO:Sof dependency imported: xgboost: 1.6.1
+2022-07-23 00:50:55,976:WARNING:No module named 'catboost'.
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-07-23 00:50:56,062:INFO:Sof dependency imported: xgboost: 1.6.1
+2022-07-23 00:50:56,066:WARNING:No module named 'catboost'.
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-07-23 00:50:56,198:INFO:setup() successfully completed in 3182.75s...............
+2022-07-23 10:26:22,101:INFO:PyCaret ClassificationExperiment
+2022-07-23 10:26:22,101:INFO:Logging name: clf-default-name
+2022-07-23 10:26:22,101:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2022-07-23 10:26:22,101:INFO:version 3.0.0.rc2
+2022-07-23 10:26:22,101:INFO:Initializing setup()
+2022-07-23 10:26:22,102:INFO:self.USI: 1d0d
+2022-07-23 10:26:22,102:INFO:self.variable_keys: {'_gpu_n_jobs_param', 'memory', 'gpu_param', 'USI', 'variable_keys', 'log_plots_param', 'y_train', '_all_metrics', 'n_jobs_param', 'pipeline', 'fix_imbalance', 'y', 'display_container', 'fold_groups_param', 'seed', '_all_models_internal', 'y_test', 'target_param', 'html_param', 'X_test', 'logging_param', 'X', 'fold_generator', 'exp_id', '_ml_usecase', 'idx', 'exp_name_log', 'data', 'X_train', 'fold_shuffle_param', '_available_plots', 'master_model_container', '_all_models', '_is_multiclass'}
+2022-07-23 10:26:22,102:INFO:Checking environment
+2022-07-23 10:26:22,102:INFO:python_version: 3.9.13
+2022-07-23 10:26:22,102:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2022-07-23 10:26:22,102:INFO:machine: AMD64
+2022-07-23 10:26:22,102:INFO:platform: Windows-10-10.0.22000-SP0
+2022-07-23 10:26:22,102:INFO:Memory: svmem(total=8346034176, available=1498431488, percent=82.0, used=6847602688, free=1498431488)
+2022-07-23 10:26:22,102:INFO:Physical Core: 4
+2022-07-23 10:26:22,102:INFO:Logical Core: 8
+2022-07-23 10:26:22,102:INFO:Checking libraries
+2022-07-23 10:26:22,102:INFO:System:
+2022-07-23 10:26:22,103:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2022-07-23 10:26:22,103:INFO:executable: C:\Users\david\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe
+2022-07-23 10:26:22,103:INFO:   machine: Windows-10-10.0.22000-SP0
+2022-07-23 10:26:22,103:INFO:PyCaret required dependencies:
+2022-07-23 10:26:22,103:INFO:                 pip: 22.2
+2022-07-23 10:26:22,103:INFO:          setuptools: 58.1.0
+2022-07-23 10:26:22,103:INFO:             pycaret: 3.0.0.rc2
+2022-07-23 10:26:22,103:INFO:             IPython: 7.30.1
+2022-07-23 10:26:22,103:INFO:          ipywidgets: 7.6.5
+2022-07-23 10:26:22,103:INFO:                tqdm: 4.62.3
+2022-07-23 10:26:22,103:INFO:               numpy: 1.21.5
+2022-07-23 10:26:22,103:INFO:              pandas: 1.3.5
+2022-07-23 10:26:22,104:INFO:              jinja2: 3.0.3
+2022-07-23 10:26:22,104:INFO:               scipy: 1.7.3
+2022-07-23 10:26:22,104:INFO:              joblib: 1.1.0
+2022-07-23 10:26:22,104:INFO:             sklearn: 1.1.1
+2022-07-23 10:26:22,104:INFO:                pyod: Installed but version unavailable
+2022-07-23 10:26:22,104:INFO:            imblearn: 0.9.1
+2022-07-23 10:26:22,104:INFO:   category_encoders: 2.5.0
+2022-07-23 10:26:22,104:INFO:            lightgbm: 3.3.2
+2022-07-23 10:26:22,104:INFO:               numba: 0.55.2
+2022-07-23 10:26:22,104:INFO:            requests: 2.28.0
+2022-07-23 10:26:22,104:INFO:          matplotlib: 3.5.1
+2022-07-23 10:26:22,104:INFO:          scikitplot: 0.3.7
+2022-07-23 10:26:22,104:INFO:         yellowbrick: 1.4
+2022-07-23 10:26:22,104:INFO:              plotly: 5.8.2
+2022-07-23 10:26:22,104:INFO:             kaleido: 0.2.1
+2022-07-23 10:26:22,104:INFO:         statsmodels: 0.13.1
+2022-07-23 10:26:22,104:INFO:              sktime: 0.12.0
+2022-07-23 10:26:22,104:INFO:               tbats: Installed but version unavailable
+2022-07-23 10:26:22,104:INFO:            pmdarima: 1.8.5
+2022-07-23 10:26:22,104:INFO:              psutil: 5.9.1
+2022-07-23 10:26:22,104:INFO:None
+2022-07-23 10:26:22,105:INFO:Set up data.
+2022-07-23 10:26:22,615:INFO:Set up train/test split.
+2022-07-23 10:26:22,968:INFO:Assigning column types.
+2022-07-23 10:26:23,016:INFO:Set up folding strategy.
+2022-07-23 10:26:23,016:INFO:Preparing preprocessing pipeline...
+2022-07-23 10:26:23,027:INFO:Set up label encoding.
+2022-07-23 10:26:23,027:INFO:Set up simple imputation.
+2022-07-23 10:26:23,293:INFO:Set up encoding of ordinal features.
+2022-07-23 10:26:23,513:INFO:Set up encoding of categorical features.
+2022-07-23 10:26:23,513:INFO:Set up imbalanced handling.
+2022-07-23 10:26:54,515:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 9.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:27:16,703:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 9.23s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:27:30,894:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 4.37s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:27:31,088:INFO:Finished creating preprocessing pipeline.
+2022-07-23 10:27:31,104:INFO:Pipeline: Pipeline(memory=Memory(location=C:\Users\david\AppData\Local\Temp\joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(exclude=None, include=None, transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None, include=['anual_income', 'age', 'working_years', 'owning_work_phone', 'owning_phone', 'owning_email'], transformer=Simp...
+                 TransformerWrapper(exclude=None, include=['housing_type', 'job', 'payment_status'], transformer=LeaveOneOutEncoder(cols=['housing_type', 'job', 'payment_status'], drop_invariant=False, handle_missing='return_nan', handle_unknown='value', random_state=3119, return_df=True, sigma=None, verbose=0))),
+                ('balance',
+                 TransformerWrapper(exclude=None, include=None, transformer=FixImbalancer(estimator=NearMiss(n_jobs=None, n_neighbors=3, n_neighbors_ver3=3, sampling_strategy='auto', version=1))))],
+         verbose=False)
+2022-07-23 10:27:31,104:INFO:Creating final display dataframe.
+2022-07-23 10:27:53,786:INFO:Setup display_container:                     Description  \
+0                    Session id   
+1                        Target   
+2                   Target type   
+3                Target mapping   
+4           Original data shape   
+5        Transformed data shape   
+6   Transformed train set shape   
+7    Transformed test set shape   
+8               Ignore features   
+9              Ordinal features   
+10             Numeric features   
+11         Categorical features   
+12                   Preprocess   
+13              Imputation type   
+14           Numeric imputation   
+15       Categorical imputation   
+16     Maximum one-hot encoding   
+17              Encoding method   
+18                Fix imbalance   
+19         Fix imbalance method   
+20               Fold Generator   
+21                  Fold Number   
+22                     CPU Jobs   
+23                      Use GPU   
+24               Log Experiment   
+25              Experiment Name   
+26                          USI   
+
+                                                Value  
+0                                                3119  
+1                                           risk_user  
+2                                              Binary  
+3                                          N: 0, Y: 1  
+4                                        (430134, 16)  
+5                                         (88561, 26)  
+6                                          (2534, 26)  
+7                                         (86027, 26)  
+8                                                   1  
+9                                                   6  
+10                                                  6  
+11                                                 12  
+12                                               True  
+13                                             simple  
+14                                               mean  
+15                                           constant  
+16                                                  5  
+17                                               None  
+18                                               True  
+19  NearMiss(n_jobs=None, n_neighbors=3, n_neighbo...  
+20                                              KFold  
+21                                                  3  
+22                                                 -1  
+23                                              False  
+24                                              False  
+25                                   clf-default-name  
+26                                               1d0d  
+2022-07-23 10:27:54,021:INFO:Sof dependency imported: xgboost: 1.6.1
+2022-07-23 10:27:54,032:WARNING:No module named 'catboost'.
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-07-23 10:27:54,198:INFO:Sof dependency imported: xgboost: 1.6.1
+2022-07-23 10:27:54,202:WARNING:No module named 'catboost'.
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2022-07-23 10:27:54,396:INFO:setup() successfully completed in 92.3s...............
+2022-07-23 10:29:30,707:INFO:Initializing compare_models()
+2022-07-23 10:29:30,707:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2022-07-23 10:29:30,707:INFO:Checking exceptions
+2022-07-23 10:29:30,785:INFO:Preparing display monitor
+2022-07-23 10:29:30,874:INFO:Initializing Logistic Regression
+2022-07-23 10:29:30,874:INFO:Total runtime is 8.245309193929037e-06 minutes
+2022-07-23 10:29:30,882:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:29:30,886:INFO:Initializing create_model()
+2022-07-23 10:29:30,886:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=lr, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:29:30,886:INFO:Checking exceptions
+2022-07-23 10:29:30,937:INFO:Importing libraries
+2022-07-23 10:29:30,937:INFO:Copying training dataset
+2022-07-23 10:29:31,021:INFO:Defining folds
+2022-07-23 10:29:31,021:INFO:Declaring metric variables
+2022-07-23 10:29:31,027:INFO:Importing untrained model
+2022-07-23 10:29:31,031:INFO:Logistic Regression Imported successfully
+2022-07-23 10:29:31,038:INFO:Starting cross validation
+2022-07-23 10:29:31,043:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:30:45,111:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 11.86s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:30:45,713:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 11.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:30:46,072:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 12.04s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:04,290:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 5.94s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:04,544:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 5.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:05,324:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 5.92s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:14,524:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.26s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:14,714:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.20s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:15,709:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.32s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:31:17,740:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:17,888:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:18,868:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:19,290:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:19,503:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:20,519:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:23,410:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:31:24,555:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:31:26,869:INFO:Calculating mean and std
+2022-07-23 10:31:26,885:INFO:Creating metrics dataframe
+2022-07-23 10:31:26,897:INFO:Uploading results into container
+2022-07-23 10:31:26,899:INFO:Uploading model into container now
+2022-07-23 10:31:26,900:INFO:master_model_container: 1
+2022-07-23 10:31:26,900:INFO:display_container: 2
+2022-07-23 10:31:26,902:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=3119, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2022-07-23 10:31:26,902:INFO:create_model() successfully completed......................................
+2022-07-23 10:31:28,683:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:31:28,684:INFO:Creating metrics dataframe
+2022-07-23 10:31:28,706:INFO:Initializing K Neighbors Classifier
+2022-07-23 10:31:28,706:INFO:Total runtime is 1.9638811031977335 minutes
+2022-07-23 10:31:28,712:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:31:28,713:INFO:Initializing create_model()
+2022-07-23 10:31:28,713:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=knn, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:31:28,713:INFO:Checking exceptions
+2022-07-23 10:31:28,774:INFO:Importing libraries
+2022-07-23 10:31:28,774:INFO:Copying training dataset
+2022-07-23 10:31:28,889:INFO:Defining folds
+2022-07-23 10:31:28,889:INFO:Declaring metric variables
+2022-07-23 10:31:28,897:INFO:Importing untrained model
+2022-07-23 10:31:28,902:INFO:K Neighbors Classifier Imported successfully
+2022-07-23 10:31:28,909:INFO:Starting cross validation
+2022-07-23 10:31:28,914:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:31:58,590:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:58,616:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:31:58,849:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:05,577:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:05,703:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:05,953:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:16,058:INFO:Calculating mean and std
+2022-07-23 10:32:16,061:INFO:Creating metrics dataframe
+2022-07-23 10:32:16,074:INFO:Uploading results into container
+2022-07-23 10:32:16,075:INFO:Uploading model into container now
+2022-07-23 10:32:16,076:INFO:master_model_container: 2
+2022-07-23 10:32:16,077:INFO:display_container: 2
+2022-07-23 10:32:16,077:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2022-07-23 10:32:16,077:INFO:create_model() successfully completed......................................
+2022-07-23 10:32:16,181:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:32:16,181:INFO:Creating metrics dataframe
+2022-07-23 10:32:16,198:INFO:Initializing Naive Bayes
+2022-07-23 10:32:16,198:INFO:Total runtime is 2.755415070056915 minutes
+2022-07-23 10:32:16,206:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:32:16,206:INFO:Initializing create_model()
+2022-07-23 10:32:16,206:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=nb, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:32:16,206:INFO:Checking exceptions
+2022-07-23 10:32:16,252:INFO:Importing libraries
+2022-07-23 10:32:16,252:INFO:Copying training dataset
+2022-07-23 10:32:16,339:INFO:Defining folds
+2022-07-23 10:32:16,339:INFO:Declaring metric variables
+2022-07-23 10:32:16,343:INFO:Importing untrained model
+2022-07-23 10:32:16,346:INFO:Naive Bayes Imported successfully
+2022-07-23 10:32:16,357:INFO:Starting cross validation
+2022-07-23 10:32:16,359:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:32:41,133:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:42,895:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:45,896:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:46,053:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:47,574:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:47,711:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:32:53,769:INFO:Calculating mean and std
+2022-07-23 10:32:53,772:INFO:Creating metrics dataframe
+2022-07-23 10:32:53,775:INFO:Uploading results into container
+2022-07-23 10:32:53,776:INFO:Uploading model into container now
+2022-07-23 10:32:53,776:INFO:master_model_container: 3
+2022-07-23 10:32:53,776:INFO:display_container: 2
+2022-07-23 10:32:53,776:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2022-07-23 10:32:53,776:INFO:create_model() successfully completed......................................
+2022-07-23 10:32:53,853:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:32:53,853:INFO:Creating metrics dataframe
+2022-07-23 10:32:53,868:INFO:Initializing Decision Tree Classifier
+2022-07-23 10:32:53,869:INFO:Total runtime is 3.3832679271697996 minutes
+2022-07-23 10:32:53,872:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:32:53,872:INFO:Initializing create_model()
+2022-07-23 10:32:53,872:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=dt, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:32:53,872:INFO:Checking exceptions
+2022-07-23 10:32:53,922:INFO:Importing libraries
+2022-07-23 10:32:53,922:INFO:Copying training dataset
+2022-07-23 10:32:54,024:INFO:Defining folds
+2022-07-23 10:32:54,024:INFO:Declaring metric variables
+2022-07-23 10:32:54,032:INFO:Importing untrained model
+2022-07-23 10:32:54,037:INFO:Decision Tree Classifier Imported successfully
+2022-07-23 10:32:54,049:INFO:Starting cross validation
+2022-07-23 10:32:54,052:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:33:17,213:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:17,606:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:17,644:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:19,058:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:19,438:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:19,496:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:26,556:INFO:Calculating mean and std
+2022-07-23 10:33:26,558:INFO:Creating metrics dataframe
+2022-07-23 10:33:26,566:INFO:Uploading results into container
+2022-07-23 10:33:26,567:INFO:Uploading model into container now
+2022-07-23 10:33:26,567:INFO:master_model_container: 4
+2022-07-23 10:33:26,567:INFO:display_container: 2
+2022-07-23 10:33:26,568:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=3119, splitter='best')
+2022-07-23 10:33:26,568:INFO:create_model() successfully completed......................................
+2022-07-23 10:33:26,661:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:33:26,664:INFO:Creating metrics dataframe
+2022-07-23 10:33:26,682:INFO:Initializing SVM - Linear Kernel
+2022-07-23 10:33:26,682:INFO:Total runtime is 3.9301522334416705 minutes
+2022-07-23 10:33:26,686:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:33:26,686:INFO:Initializing create_model()
+2022-07-23 10:33:26,686:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=svm, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:33:26,686:INFO:Checking exceptions
+2022-07-23 10:33:26,741:INFO:Importing libraries
+2022-07-23 10:33:26,741:INFO:Copying training dataset
+2022-07-23 10:33:26,856:INFO:Defining folds
+2022-07-23 10:33:26,856:INFO:Declaring metric variables
+2022-07-23 10:33:26,860:INFO:Importing untrained model
+2022-07-23 10:33:26,870:INFO:SVM - Linear Kernel Imported successfully
+2022-07-23 10:33:26,887:INFO:Starting cross validation
+2022-07-23 10:33:26,890:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:33:50,852:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:51,188:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:51,238:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:52,741:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:53,128:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:53,176:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:33:55,735:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:33:56,019:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:33:56,060:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:33:59,129:INFO:Calculating mean and std
+2022-07-23 10:33:59,136:INFO:Creating metrics dataframe
+2022-07-23 10:33:59,142:INFO:Uploading results into container
+2022-07-23 10:33:59,142:INFO:Uploading model into container now
+2022-07-23 10:33:59,143:INFO:master_model_container: 5
+2022-07-23 10:33:59,143:INFO:display_container: 2
+2022-07-23 10:33:59,144:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=3119, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2022-07-23 10:33:59,148:INFO:create_model() successfully completed......................................
+2022-07-23 10:33:59,242:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:33:59,242:INFO:Creating metrics dataframe
+2022-07-23 10:33:59,267:INFO:Initializing Ridge Classifier
+2022-07-23 10:33:59,267:INFO:Total runtime is 4.473225561777751 minutes
+2022-07-23 10:33:59,271:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:33:59,271:INFO:Initializing create_model()
+2022-07-23 10:33:59,271:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=ridge, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:33:59,271:INFO:Checking exceptions
+2022-07-23 10:33:59,330:INFO:Importing libraries
+2022-07-23 10:33:59,331:INFO:Copying training dataset
+2022-07-23 10:33:59,439:INFO:Defining folds
+2022-07-23 10:33:59,439:INFO:Declaring metric variables
+2022-07-23 10:33:59,446:INFO:Importing untrained model
+2022-07-23 10:33:59,452:INFO:Ridge Classifier Imported successfully
+2022-07-23 10:33:59,463:INFO:Starting cross validation
+2022-07-23 10:33:59,464:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:34:26,510:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:26,705:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:26,783:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:28,471:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:28,566:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:28,676:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:34:34,389:INFO:Calculating mean and std
+2022-07-23 10:34:34,397:INFO:Creating metrics dataframe
+2022-07-23 10:34:34,410:INFO:Uploading results into container
+2022-07-23 10:34:34,412:INFO:Uploading model into container now
+2022-07-23 10:34:34,413:INFO:master_model_container: 6
+2022-07-23 10:34:34,413:INFO:display_container: 2
+2022-07-23 10:34:34,414:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, normalize='deprecated', positive=False,
+                random_state=3119, solver='auto', tol=0.001)
+2022-07-23 10:34:34,414:INFO:create_model() successfully completed......................................
+2022-07-23 10:34:34,532:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:34:34,532:INFO:Creating metrics dataframe
+2022-07-23 10:34:34,552:INFO:Initializing Random Forest Classifier
+2022-07-23 10:34:34,552:INFO:Total runtime is 5.061314936478933 minutes
+2022-07-23 10:34:34,555:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:34:34,555:INFO:Initializing create_model()
+2022-07-23 10:34:34,555:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=rf, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:34:34,556:INFO:Checking exceptions
+2022-07-23 10:34:34,614:INFO:Importing libraries
+2022-07-23 10:34:34,614:INFO:Copying training dataset
+2022-07-23 10:34:34,721:INFO:Defining folds
+2022-07-23 10:34:34,721:INFO:Declaring metric variables
+2022-07-23 10:34:34,730:INFO:Importing untrained model
+2022-07-23 10:34:34,735:INFO:Random Forest Classifier Imported successfully
+2022-07-23 10:34:34,750:INFO:Starting cross validation
+2022-07-23 10:34:34,752:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:35:01,651:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:01,671:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:01,739:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:04,960:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:05,139:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:05,167:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:15,611:INFO:Calculating mean and std
+2022-07-23 10:35:15,615:INFO:Creating metrics dataframe
+2022-07-23 10:35:15,628:INFO:Uploading results into container
+2022-07-23 10:35:15,629:INFO:Uploading model into container now
+2022-07-23 10:35:15,630:INFO:master_model_container: 7
+2022-07-23 10:35:15,631:INFO:display_container: 2
+2022-07-23 10:35:15,632:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=3119, verbose=0, warm_start=False)
+2022-07-23 10:35:15,632:INFO:create_model() successfully completed......................................
+2022-07-23 10:35:15,734:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:35:15,735:INFO:Creating metrics dataframe
+2022-07-23 10:35:15,764:INFO:Initializing Quadratic Discriminant Analysis
+2022-07-23 10:35:15,764:INFO:Total runtime is 5.748182396094005 minutes
+2022-07-23 10:35:15,769:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:35:15,770:INFO:Initializing create_model()
+2022-07-23 10:35:15,770:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=qda, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:35:15,770:INFO:Checking exceptions
+2022-07-23 10:35:15,833:INFO:Importing libraries
+2022-07-23 10:35:15,833:INFO:Copying training dataset
+2022-07-23 10:35:15,959:INFO:Defining folds
+2022-07-23 10:35:15,959:INFO:Declaring metric variables
+2022-07-23 10:35:15,963:INFO:Importing untrained model
+2022-07-23 10:35:15,966:INFO:Quadratic Discriminant Analysis Imported successfully
+2022-07-23 10:35:15,980:INFO:Starting cross validation
+2022-07-23 10:35:15,982:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:35:46,256:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2022-07-23 10:35:46,258:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:46,442:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2022-07-23 10:35:46,444:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:46,487:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:887: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2022-07-23 10:35:46,489:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:47,962:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:47,962:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:48,111:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:48,194:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:48,194:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:48,195:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:48,195:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:48,376:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:48,378:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:48,643:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:48,842:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:48,854:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:35:50,377:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,378:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,520:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:50,596:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,596:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,642:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: divide by zero encountered in power
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,643:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:912: RuntimeWarning: invalid value encountered in multiply
+  X2 = np.dot(Xm, R * (S ** (-0.5)))
+
+2022-07-23 10:35:50,729:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:50,781:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\discriminant_analysis.py:915: RuntimeWarning: divide by zero encountered in log
+  u = np.asarray([np.sum(np.log(s)) for s in self.scalings_])
+
+2022-07-23 10:35:53,919:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:35:54,068:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:35:54,243:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:35:57,166:INFO:Calculating mean and std
+2022-07-23 10:35:57,171:INFO:Creating metrics dataframe
+2022-07-23 10:35:57,184:INFO:Uploading results into container
+2022-07-23 10:35:57,185:INFO:Uploading model into container now
+2022-07-23 10:35:57,186:INFO:master_model_container: 8
+2022-07-23 10:35:57,186:INFO:display_container: 2
+2022-07-23 10:35:57,187:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2022-07-23 10:35:57,187:INFO:create_model() successfully completed......................................
+2022-07-23 10:35:57,286:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:35:57,287:INFO:Creating metrics dataframe
+2022-07-23 10:35:57,309:INFO:Initializing Ada Boost Classifier
+2022-07-23 10:35:57,309:INFO:Total runtime is 6.44059249162674 minutes
+2022-07-23 10:35:57,315:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:35:57,316:INFO:Initializing create_model()
+2022-07-23 10:35:57,316:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=ada, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:35:57,316:INFO:Checking exceptions
+2022-07-23 10:35:57,366:INFO:Importing libraries
+2022-07-23 10:35:57,366:INFO:Copying training dataset
+2022-07-23 10:35:57,493:INFO:Defining folds
+2022-07-23 10:35:57,494:INFO:Declaring metric variables
+2022-07-23 10:35:57,505:INFO:Importing untrained model
+2022-07-23 10:35:57,509:INFO:Ada Boost Classifier Imported successfully
+2022-07-23 10:35:57,522:INFO:Starting cross validation
+2022-07-23 10:35:57,524:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:36:22,821:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:22,877:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:23,159:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:24,826:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:24,947:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:25,200:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:36:32,652:INFO:Calculating mean and std
+2022-07-23 10:36:32,656:INFO:Creating metrics dataframe
+2022-07-23 10:36:32,664:INFO:Uploading results into container
+2022-07-23 10:36:32,664:INFO:Uploading model into container now
+2022-07-23 10:36:32,664:INFO:master_model_container: 9
+2022-07-23 10:36:32,665:INFO:display_container: 2
+2022-07-23 10:36:32,665:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator=None, learning_rate=1.0,
+                   n_estimators=50, random_state=3119)
+2022-07-23 10:36:32,665:INFO:create_model() successfully completed......................................
+2022-07-23 10:36:32,757:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:36:32,757:INFO:Creating metrics dataframe
+2022-07-23 10:36:32,780:INFO:Initializing Gradient Boosting Classifier
+2022-07-23 10:36:32,781:INFO:Total runtime is 7.031803143024445 minutes
+2022-07-23 10:36:32,785:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:36:32,785:INFO:Initializing create_model()
+2022-07-23 10:36:32,785:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=gbc, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:36:32,785:INFO:Checking exceptions
+2022-07-23 10:36:32,846:INFO:Importing libraries
+2022-07-23 10:36:32,846:INFO:Copying training dataset
+2022-07-23 10:36:32,968:INFO:Defining folds
+2022-07-23 10:36:32,969:INFO:Declaring metric variables
+2022-07-23 10:36:32,972:INFO:Importing untrained model
+2022-07-23 10:36:32,981:INFO:Gradient Boosting Classifier Imported successfully
+2022-07-23 10:36:32,990:INFO:Starting cross validation
+2022-07-23 10:36:32,992:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:37:01,477:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:01,776:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:02,006:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:04,124:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:04,429:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:04,524:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:15,238:INFO:Calculating mean and std
+2022-07-23 10:37:15,241:INFO:Creating metrics dataframe
+2022-07-23 10:37:15,248:INFO:Uploading results into container
+2022-07-23 10:37:15,249:INFO:Uploading model into container now
+2022-07-23 10:37:15,250:INFO:master_model_container: 10
+2022-07-23 10:37:15,250:INFO:display_container: 2
+2022-07-23 10:37:15,251:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=3119, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2022-07-23 10:37:15,253:INFO:create_model() successfully completed......................................
+2022-07-23 10:37:15,378:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:37:15,378:INFO:Creating metrics dataframe
+2022-07-23 10:37:15,404:INFO:Initializing Linear Discriminant Analysis
+2022-07-23 10:37:15,405:INFO:Total runtime is 7.74217826128006 minutes
+2022-07-23 10:37:15,416:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:37:15,417:INFO:Initializing create_model()
+2022-07-23 10:37:15,417:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=lda, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:37:15,417:INFO:Checking exceptions
+2022-07-23 10:37:15,477:INFO:Importing libraries
+2022-07-23 10:37:15,477:INFO:Copying training dataset
+2022-07-23 10:37:15,615:INFO:Defining folds
+2022-07-23 10:37:15,615:INFO:Declaring metric variables
+2022-07-23 10:37:15,624:INFO:Importing untrained model
+2022-07-23 10:37:15,632:INFO:Linear Discriminant Analysis Imported successfully
+2022-07-23 10:37:15,649:INFO:Starting cross validation
+2022-07-23 10:37:15,651:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:37:46,582:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:46,608:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:46,928:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:48,540:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:48,581:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:48,932:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:37:57,252:INFO:Calculating mean and std
+2022-07-23 10:37:57,255:INFO:Creating metrics dataframe
+2022-07-23 10:37:57,261:INFO:Uploading results into container
+2022-07-23 10:37:57,261:INFO:Uploading model into container now
+2022-07-23 10:37:57,262:INFO:master_model_container: 11
+2022-07-23 10:37:57,262:INFO:display_container: 2
+2022-07-23 10:37:57,263:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2022-07-23 10:37:57,264:INFO:create_model() successfully completed......................................
+2022-07-23 10:37:57,358:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:37:57,358:INFO:Creating metrics dataframe
+2022-07-23 10:37:57,378:INFO:Initializing Extra Trees Classifier
+2022-07-23 10:37:57,378:INFO:Total runtime is 8.441750729084015 minutes
+2022-07-23 10:37:57,385:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:37:57,386:INFO:Initializing create_model()
+2022-07-23 10:37:57,386:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=et, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:37:57,386:INFO:Checking exceptions
+2022-07-23 10:37:57,442:INFO:Importing libraries
+2022-07-23 10:37:57,443:INFO:Copying training dataset
+2022-07-23 10:37:57,561:INFO:Defining folds
+2022-07-23 10:37:57,561:INFO:Declaring metric variables
+2022-07-23 10:37:57,568:INFO:Importing untrained model
+2022-07-23 10:37:57,572:INFO:Extra Trees Classifier Imported successfully
+2022-07-23 10:37:57,579:INFO:Starting cross validation
+2022-07-23 10:37:57,584:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:38:24,198:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:24,714:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:24,772:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:26,887:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:27,796:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:27,883:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:38:37,014:INFO:Calculating mean and std
+2022-07-23 10:38:37,018:INFO:Creating metrics dataframe
+2022-07-23 10:38:37,031:INFO:Uploading results into container
+2022-07-23 10:38:37,032:INFO:Uploading model into container now
+2022-07-23 10:38:37,033:INFO:master_model_container: 12
+2022-07-23 10:38:37,034:INFO:display_container: 2
+2022-07-23 10:38:37,035:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=3119, verbose=0, warm_start=False)
+2022-07-23 10:38:37,035:INFO:create_model() successfully completed......................................
+2022-07-23 10:38:37,153:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:38:37,153:INFO:Creating metrics dataframe
+2022-07-23 10:38:37,172:INFO:Initializing Extreme Gradient Boosting
+2022-07-23 10:38:37,172:INFO:Total runtime is 9.104983361562093 minutes
+2022-07-23 10:38:37,179:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:38:37,180:INFO:Initializing create_model()
+2022-07-23 10:38:37,181:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=xgboost, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:38:37,181:INFO:Checking exceptions
+2022-07-23 10:38:37,253:INFO:Importing libraries
+2022-07-23 10:38:37,254:INFO:Copying training dataset
+2022-07-23 10:38:37,386:INFO:Defining folds
+2022-07-23 10:38:37,386:INFO:Declaring metric variables
+2022-07-23 10:38:37,391:INFO:Importing untrained model
+2022-07-23 10:38:37,400:INFO:Extreme Gradient Boosting Imported successfully
+2022-07-23 10:38:37,410:INFO:Starting cross validation
+2022-07-23 10:38:37,413:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:39:07,161:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:07,180:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:07,302:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:10,666:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:10,684:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:10,720:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:21,606:INFO:Calculating mean and std
+2022-07-23 10:39:21,612:INFO:Creating metrics dataframe
+2022-07-23 10:39:21,620:INFO:Uploading results into container
+2022-07-23 10:39:21,621:INFO:Uploading model into container now
+2022-07-23 10:39:21,621:INFO:master_model_container: 13
+2022-07-23 10:39:21,621:INFO:display_container: 2
+2022-07-23 10:39:21,622:INFO:XGBClassifier(base_score=None, booster='gbtree', callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, gamma=None,
+              gpu_id=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, n_estimators=100, n_jobs=-1,
+              num_parallel_tree=None, objective='binary:logistic',
+              predictor=None, random_state=3119, reg_alpha=None, ...)
+2022-07-23 10:39:21,623:INFO:create_model() successfully completed......................................
+2022-07-23 10:39:21,712:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:39:21,712:INFO:Creating metrics dataframe
+2022-07-23 10:39:21,738:INFO:Initializing Light Gradient Boosting Machine
+2022-07-23 10:39:21,738:INFO:Total runtime is 9.847741893927257 minutes
+2022-07-23 10:39:21,742:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:39:21,742:INFO:Initializing create_model()
+2022-07-23 10:39:21,742:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=lightgbm, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:39:21,743:INFO:Checking exceptions
+2022-07-23 10:39:21,799:INFO:Importing libraries
+2022-07-23 10:39:21,800:INFO:Copying training dataset
+2022-07-23 10:39:21,922:INFO:Defining folds
+2022-07-23 10:39:21,922:INFO:Declaring metric variables
+2022-07-23 10:39:21,926:INFO:Importing untrained model
+2022-07-23 10:39:21,930:INFO:Light Gradient Boosting Machine Imported successfully
+2022-07-23 10:39:21,939:INFO:Starting cross validation
+2022-07-23 10:39:21,942:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:39:49,198:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:49,460:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:49,650:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:52,553:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:52,814:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:39:52,958:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:03,052:INFO:Calculating mean and std
+2022-07-23 10:40:03,055:INFO:Creating metrics dataframe
+2022-07-23 10:40:03,064:INFO:Uploading results into container
+2022-07-23 10:40:03,066:INFO:Uploading model into container now
+2022-07-23 10:40:03,067:INFO:master_model_container: 14
+2022-07-23 10:40:03,067:INFO:display_container: 2
+2022-07-23 10:40:03,068:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=3119, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2022-07-23 10:40:03,069:INFO:create_model() successfully completed......................................
+2022-07-23 10:40:03,209:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:40:03,209:INFO:Creating metrics dataframe
+2022-07-23 10:40:03,248:INFO:Initializing Dummy Classifier
+2022-07-23 10:40:03,248:INFO:Total runtime is 10.539576478799185 minutes
+2022-07-23 10:40:03,252:INFO:SubProcess create_model() called ==================================
+2022-07-23 10:40:03,253:INFO:Initializing create_model()
+2022-07-23 10:40:03,253:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=dummy, fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x000001B78E627D60>, return_train_score=False, kwargs={})
+2022-07-23 10:40:03,253:INFO:Checking exceptions
+2022-07-23 10:40:03,314:INFO:Importing libraries
+2022-07-23 10:40:03,314:INFO:Copying training dataset
+2022-07-23 10:40:03,459:INFO:Defining folds
+2022-07-23 10:40:03,460:INFO:Declaring metric variables
+2022-07-23 10:40:03,467:INFO:Importing untrained model
+2022-07-23 10:40:03,471:INFO:Dummy Classifier Imported successfully
+2022-07-23 10:40:03,483:INFO:Starting cross validation
+2022-07-23 10:40:03,488:INFO:Cross validating with KFold(n_splits=3, random_state=None, shuffle=False), n_jobs=-1
+2022-07-23 10:40:34,174:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:34,240:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:34,243:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:36,621:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:36,714:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:36,733:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\utils\metaestimators.py:201: FutureWarning: if_delegate_has_method was deprecated in version 1.1 and will be removed in version 1.3. Use if_available instead.
+  warnings.warn(
+
+2022-07-23 10:40:42,149:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:40:42,287:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:40:42,336:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\sklearn\metrics\_classification.py:1327: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2022-07-23 10:40:45,251:INFO:Calculating mean and std
+2022-07-23 10:40:45,252:INFO:Creating metrics dataframe
+2022-07-23 10:40:45,258:INFO:Uploading results into container
+2022-07-23 10:40:45,259:INFO:Uploading model into container now
+2022-07-23 10:40:45,259:INFO:master_model_container: 15
+2022-07-23 10:40:45,259:INFO:display_container: 2
+2022-07-23 10:40:45,259:INFO:DummyClassifier(constant=None, random_state=3119, strategy='prior')
+2022-07-23 10:40:45,259:INFO:create_model() successfully completed......................................
+2022-07-23 10:40:45,347:INFO:SubProcess create_model() end ==================================
+2022-07-23 10:40:45,347:INFO:Creating metrics dataframe
+2022-07-23 10:40:45,385:INFO:Initializing create_model()
+2022-07-23 10:40:45,386:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001B7B2E34940>, estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=3119, splitter='best'), fold=KFold(n_splits=3, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, return_train_score=False, kwargs={})
+2022-07-23 10:40:45,386:INFO:Checking exceptions
+2022-07-23 10:40:45,495:INFO:Importing libraries
+2022-07-23 10:40:45,495:INFO:Copying training dataset
+2022-07-23 10:40:45,625:INFO:Defining folds
+2022-07-23 10:40:45,625:INFO:Declaring metric variables
+2022-07-23 10:40:45,625:INFO:Importing untrained model
+2022-07-23 10:40:45,625:INFO:Declaring custom model
+2022-07-23 10:40:45,626:INFO:Decision Tree Classifier Imported successfully
+2022-07-23 10:40:45,628:INFO:Cross validation set to False
+2022-07-23 10:40:45,628:INFO:Fitting Model
+2022-07-23 10:41:25,560:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 11.80s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:41:47,215:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 6.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:41:57,708:WARNING:C:\Users\david\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\pycaret\internal\pipeline.py:129: UserWarning: Persisting input arguments took 3.25s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, y, fitted_transformer = memory(
+
+2022-07-23 10:41:59,898:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=3119, splitter='best')
+2022-07-23 10:41:59,899:INFO:create_model() successfully completed......................................
+2022-07-23 10:42:00,059:INFO:master_model_container: 15
+2022-07-23 10:42:00,059:INFO:display_container: 2
+2022-07-23 10:42:00,060:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=3119, splitter='best')
+2022-07-23 10:42:00,060:INFO:compare_models() successfully completed......................................
