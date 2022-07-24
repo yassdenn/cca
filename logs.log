@@ -5566,3 +5566,11 @@ THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
 2022-07-24 13:40:23,277:INFO:Fitting Model
 2022-07-24 13:40:24,041:INFO:Visual Rendered Successfully
 2022-07-24 13:40:24,165:INFO:plot_model() successfully completed......................................
+2022-07-24 19:39:32,515:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-24 19:39:32,517:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-24 19:39:32,517:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-07-24 19:39:32,517:WARNING:No module named 'cuml'.
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
