@@ -1,0 +1,11 @@
+pandas==1.3.2
+plotly==4.14.3
+plotly_eexpress==0.4.1
+imbalanced-learn==0.7.0
+numpy==1.21.2
+pillow==9.2.0
+scikit-learn==0.23.2
+scikit-plot==0.3.7
+seaborn==0.11.2
+seaborn-base==0.11.2
+pycaret==2.3.10
